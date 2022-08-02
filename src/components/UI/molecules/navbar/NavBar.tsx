@@ -57,7 +57,7 @@ export const NavBar = () => {
 				</li>
 				<li className="nav-item">
 					<Link
-						to="/About"
+						to="/About/contact"
 						className="nav-item"
 						onClick={() =>
 							menuState ? setMenuState(!menuState) : setMenuState(menuState)

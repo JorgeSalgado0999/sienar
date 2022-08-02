@@ -39,6 +39,7 @@ body {
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 *,
 *:before,

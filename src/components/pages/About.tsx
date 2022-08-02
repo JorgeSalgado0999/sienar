@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import {useParams} from "react-router-dom";
+
 import {Video} from "src/components/UI/atoms";
 import "./About.css";
 
 export const About = () => {
+	let {section} = useParams();
+	const contact = useRef(null);
+
+	function scrollTo(elementRef: any) {
+		window.scrollTo({
+			top: elementRef.current.offsetTop,
+			behavior: "smooth",
+		});
+	}
+
+	useEffect(() => {
+		if (section === "contact") {
+			scrollTo(contact);
+		}
+	}, []);
+
 	return (
 		<div className="about">
 			<Video type="solutions" />
@@ -28,7 +46,7 @@ export const About = () => {
 			</div>
 
 			<h2 style={{marginLeft: "2rem"}}>Drop us a Line:</h2>
-			<div className="contact-form">
+			<div className="contact-form" ref={contact}>
 				<div className="col-left">
 					<form>
 						<label>
