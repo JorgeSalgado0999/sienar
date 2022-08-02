@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sienar/static/css/main.2ece75d6.css",
+    "main.js": "/sienar/static/js/main.227f734d.js",
+    "static/media/IBMPlexMono-Bold.ttf": "/sienar/static/media/IBMPlexMono-Bold.dd35b7f40967af6976c1.ttf",
+    "static/media/IBMPlexMono-Regular.ttf": "/sienar/static/media/IBMPlexMono-Regular.33871c60cf0655fd9a98.ttf",
+    "static/media/pirulen.otf": "/sienar/static/media/pirulen.8cd956b0478c0e3dc882.otf",
+    "index.html": "/sienar/index.html",
+    "main.2ece75d6.css.map": "/sienar/static/css/main.2ece75d6.css.map",
+    "main.227f734d.js.map": "/sienar/static/js/main.227f734d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ece75d6.css",
+    "static/js/main.227f734d.js"
+  ]
+}
