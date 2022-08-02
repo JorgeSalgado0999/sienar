@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "pirulen";
+	src: url("src/assets/fonts/pirulen.otf");
+}
+@font-face {
+	font-family: "ibm";
+	src: url("src/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.ttf");
+}
+@font-face {
+	font-family: "ibm-bold";
+	src: url("src/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.ttf");
+}
+
+:root {
+	--background: #e4e3e1;
+	--mainColor: #000;
+	--secondaryColor: #c20073;
+	--white: #fff;
+	---black: #000;
+}
+[data-theme="dark"] {
+	--background: #1b1c1e;
+	--mainColor: #fff;
+	--secondaryColor: #56e3d3;
+	--white: #fff;
+	---black: #000;
+}
+html,
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "ibm";
+	font-size: 10px;
+	background-color: var(--background);
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+.container {
+	width: 100vw;
+	max-width: 170rem;
+}
+
+h1 {
+	color: var(--mainColor);
+	font-family: pirulen;
+	font-size: 4rem;
+}
+h2 {
+	color: var(--secondaryColor);
+	font-size: 3.5rem;
+}
+h3 {
+	color: var(--white);
+	font-size: 3rem;
+}
+h4 {
+	color: var(--white);
+	font-size: 2.5rem;
+}
+h5 {
+	color: var(--mainColor);
+	font-size: 2rem;
+}
+p {
+	color: var(--mainColor);
+	font-size: 2rem;
+}
+@media (min-width: 992px) {
+	h1 {
+		color: var(--mainColor);
+		font-family: pirulen;
+		font-size: 5rem;
+	}
+	h2 {
+		color: var(--secondaryColor);
+		font-size: 4.5rem;
+		font-family: pirulen;
+	}
+	h3 {
+		color: var(--secondaryColor);
+		font-size: 4rem;
+	}
+	h4 {
+		color: var(--white);
+		font-size: 3.5rem;
+	}
+	h5 {
+		color: var(--mainColor);
+		font-size: 3rem;
+	}
+	p {
+		color: var(--mainColor);
+		font-size: 3rem;
+	}
+}
+.center {
+	text-align: center;
+}

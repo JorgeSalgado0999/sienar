@@ -1,0 +1,17 @@
+.color {
+	color: var(--secondaryColor);
+	fill: var(--secondaryColor);
+}
+.stroke {
+	color: var(--secondaryColor);
+	stroke: var(--secondaryColor);
+}
+
+.logo .color {
+	color: var(--white);
+	fill: var(--white);
+}
+.logo .stroke {
+	color: var(--white);
+	stroke: var(--white);
+}
