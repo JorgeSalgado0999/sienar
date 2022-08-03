@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import "./Service.css";
 
 interface Props {
@@ -13,11 +14,11 @@ export const Service = (props: Props) => {
 	const overlayStyle = `color-overlay color-overlay-${props.type}`;
 	return (
 		<div className={type ? "left" : "right"}>
-			<div className="service-container">
+			<Link to={`/solutions/${props.photo}`} className="service-container">
 				<img src={url} alt="" className="service-photo" />
 				<div className={overlayStyle}></div>
 				<h4 className="text-position">{props.service}</h4>
-			</div>
+			</Link>
 		</div>
 	);
 };

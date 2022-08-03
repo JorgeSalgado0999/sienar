@@ -4,6 +4,7 @@
 	position: relative;
 	text-align: center;
 	color: white;
+	cursor: pointer;
 }
 @media (min-width: 992px) {
 	.service-container {
@@ -38,9 +39,10 @@
 
 .text-position {
 	position: absolute;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin: 0;
 }
 .service-photo {
 	width: 100%;

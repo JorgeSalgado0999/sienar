@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import db from "src/firebase";
+import {collection, onSnapshot} from "firebase/firestore";
 import {Video, Service} from "src/components/UI/atoms";
 import {
 	Analyse,
@@ -10,11 +12,21 @@ import {
 import "./Home.css";
 
 export const Home = () => {
+	const [datos, setDatos] = useState([]);
+
+	useEffect(() => {
+		onSnapshot(collection(db, "sienar-data"), (snapshot) => {
+			setDatos(snapshot.docs.map((doc) => doc.data()));
+		});
+	}, []);
+
 	return (
-		<div>
+		<div>	
 			<Video type="home" />
 			<div className="intro">
-				<h2 className="center">software development For The Enterprise</h2>
+				<h2 className="center">
+					software development For The Enterprise {datos[0].projects}
+				</h2>
 				<p className="center">
 					With experience in machine learning and software development, we use
 					and develop technology to increase the competitiveness of your
