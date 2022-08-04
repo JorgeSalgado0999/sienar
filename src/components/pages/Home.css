@@ -1,3 +1,36 @@
+.video-container {
+	width: 100vw;
+	max-width: 100vw;
+	height: 75vh;
+	position: relative;
+}
+.info-projects {
+	height: 7rem;
+	border: solid 4px var(--mainColor);
+	border-radius: 2px;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+}
+h5.home-info {
+	font-size: 3rem;
+	margin: 0;
+}
+.home-info span {
+	font-family: "ibm-bold";
+}
+.info-left {
+	bottom: 3rem;
+	left: 2rem;
+}
+.info-right {
+	bottom: 3rem;
+	right: 2rem;
+}
+
 .intro {
 	width: 80%;
 	margin: auto;

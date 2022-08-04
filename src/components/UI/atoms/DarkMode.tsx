@@ -39,6 +39,7 @@ export const DarkMode = () => {
 					onClick={() => {
 						setDark();
 						setIconMode(false);
+						window.location.reload();
 					}}
 				/>
 			) : (
@@ -47,6 +48,7 @@ export const DarkMode = () => {
 					onClick={() => {
 						setLight();
 						setIconMode(true);
+						window.location.reload();
 					}}
 				/>
 			)}
