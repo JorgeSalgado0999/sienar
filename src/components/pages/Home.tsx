@@ -45,15 +45,17 @@ export const Home = () => {
 				<div>
 					<div className="video-container">
 						<Video type="home" />
-						<div className="info-projects info-left">
-							<h5 className="home-info">
-								+<span>{projects}</span> Completed Projects
-							</h5>
-						</div>
-						<div className="info-projects info-right">
-							<h5 className="home-info">
-								+<span>{days}</span> Days on Operation
-							</h5>
+						<div className="info-projects">
+							<div className="info-box">
+								<h5 className="home-info">
+									+<span>{projects}</span> Completed Projects
+								</h5>
+							</div>
+							<div className="info-box">
+								<h5 className="home-info">
+									+<span>{days}</span> Days on Operation
+								</h5>
+							</div>
 						</div>
 					</div>
 					<div className="intro">

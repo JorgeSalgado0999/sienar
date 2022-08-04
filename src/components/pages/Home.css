@@ -6,14 +6,22 @@
 }
 .info-projects {
 	height: 7rem;
+	width: 100vw;
+	padding: 0 3rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+
+	position: absolute;
+	bottom: 70%;
+}
+.info-box {
 	border: solid 4px var(--mainColor);
 	border-radius: 2px;
 	padding: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	position: absolute;
 }
 h5.home-info {
 	font-size: 3rem;
@@ -22,13 +30,14 @@ h5.home-info {
 .home-info span {
 	font-family: "ibm-bold";
 }
-.info-left {
-	bottom: 3rem;
-	left: 2rem;
-}
-.info-right {
-	bottom: 3rem;
-	right: 2rem;
+
+@media (min-width: 992px) {
+	.info-projects {
+		flex-direction: row;
+		position: absolute;
+		bottom: 3rem;
+		gap: 0;
+	}
 }
 
 .intro {

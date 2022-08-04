@@ -1,12 +1,25 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {useParams} from "react-router-dom";
+import {collection, onSnapshot} from "firebase/firestore";
+import db from "src/firebase";
 
 import {Video} from "src/components/UI/atoms";
 import "./About.css";
 
 export const About = () => {
+	const [name, setName] = useState("");
+	const [mail, setMail] = useState("");
+	const [message, setMessage] = useState("");
+	const [phone, setPhone] = useState("");
 	let {section} = useParams();
 	const contact = useRef(null);
+
+	function sendMessage(e: any) {
+		e.preventDefault();
+		let mensajeF = `QUe tal mi nombre es:${name}, ${message} mi contacto es: ${mail}`;
+		let link = `https://wa.me/${phone}/?text=${mensajeF}`;
+		window.open(link, "_blank");
+	}
 
 	function scrollTo(elementRef: any) {
 		window.scrollTo({
@@ -19,6 +32,11 @@ export const About = () => {
 		if (section === "contact") {
 			scrollTo(contact);
 		}
+		onSnapshot(collection(db, "sienar-data"), (snapshot) => {
+			snapshot.docs.map((doc) => {
+				setPhone(doc.data().phone);
+			});
+		});
 	}, []);
 
 	return (
@@ -48,23 +66,34 @@ export const About = () => {
 			<h2 style={{marginLeft: "2rem"}}>Drop us a Line:</h2>
 			<div className="contact-form" ref={contact}>
 				<div className="col-left">
-					<form>
+					<form onSubmit={(e) => sendMessage(e)}>
 						<label>
 							Name:
 							<br />
-							<input type="text" />
+							<input
+								type="text"
+								value={name}
+								onChange={(t) => setName(t.target.value)}
+							/>
 						</label>
 
 						<label>
 							Email:
 							<br />
-							<input type="text" />
+							<input
+								type="text"
+								value={mail}
+								onChange={(t) => setMail(t.target.value)}
+							/>
 						</label>
 
 						<label>
 							Message:
 							<br />
-							<textarea />
+							<textarea
+								value={message}
+								onChange={(t) => setMessage(t.target.value)}
+							/>
 						</label>
 						<input type="submit" value="Send" />
 					</form>
