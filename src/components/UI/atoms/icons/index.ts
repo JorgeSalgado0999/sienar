@@ -10,6 +10,7 @@ import {Cloud} from "./Cloud";
 import {Robotic} from "./Robotic";
 import {Blockchain} from "./Blockchain";
 import {Logo} from "./Logo";
+import {LogoV} from "./LogoV";
 import {Instagram} from "./Instagram";
 import {Linkedin} from "./Linkedin";
 
@@ -26,6 +27,7 @@ export {
 	Robotic,
 	Blockchain,
 	Logo,
+	LogoV,
 	Instagram,
 	Linkedin,
 };

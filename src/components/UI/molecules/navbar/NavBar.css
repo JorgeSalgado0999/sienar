@@ -31,17 +31,17 @@ h1 span {
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
-	/*
-		padding: 0.7rem 1.7rem;
-		border: solid 1px;
-		*/
 	position: absolute;
 	top: -100%;
 	transition: all 0.7s ease;
+	border: none;
 }
 @media (min-width: 992px) {
 	.nav-menu {
 		position: static;
+		padding: 0.7rem 1.7rem;
+		border: solid 2px var(--mainColor);
+		border-radius: 5px;
 	}
 }
 .nav-menu.active {
@@ -58,15 +58,16 @@ h1 span {
 	align-items: center;
 }
 .nav-item {
-	color: var(--mainColor);
+	color: var(--secondaryColor);
 	text-decoration: none;
 	font-size: 3.5rem;
 	padding-right: 0.5rem;
 }
 .separator {
 	border-right: solid 1px;
+	padding-right: 1.5rem;
 }
 .nav-item :hover {
-	color: var(--secondaryColor);
+	color: var(--mainColor);
 	text-decoration: underline;
 }

@@ -9,6 +9,7 @@ import {
 	Implement,
 	Development,
 	Follow,
+	LogoV,
 } from "src/components/UI/atoms/icons";
 import "./Home.css";
 
@@ -45,6 +46,9 @@ export const Home = () => {
 				<div>
 					<div className="video-container">
 						<Video type="home" />
+						<div className="home-logo-absolute">
+							<LogoV />
+						</div>
 						<div className="info-projects">
 							<div className="info-box">
 								<h5 className="home-info">
@@ -60,7 +64,7 @@ export const Home = () => {
 					</div>
 					<div className="intro">
 						<h2 className="center">software development For The Enterprise</h2>
-						<p className="center">
+						<p className="">
 							With experience in machine learning and software development, we
 							use and develop technology to increase the competitiveness of your
 							business by focusing on user experience and innovation.

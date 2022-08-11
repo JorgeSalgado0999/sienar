@@ -1,6 +1,7 @@
 .row {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 .col-img {
 	width: 50%;
@@ -9,13 +10,43 @@
 	align-items: center;
 }
 .col-content {
-	width: 50%;
+	width: 100%;
 	padding: 0 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	order: -1;
+}
+@media (min-width: 992px) {
+	.row {
+		flex-direction: row;
+
+		justify-content: space-between;
+	}
+	.col-content {
+		width: 50%;
+	}
+	.col-content:nth-child(even) {
+		order: 2;
+	}
 }
 .col-content p {
 	text-align: justify;
+}
+
+.col-content h3 {
+	font-family: "pirulen";
+}
+
+.logo-container {
+	position: relative;
+}
+
+.logo-absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
 }

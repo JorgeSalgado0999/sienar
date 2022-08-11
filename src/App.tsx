@@ -20,6 +20,7 @@ function App() {
 				<Route path="/About/" element={<About />}>
 					<Route path="/About/:section" element={<About />} />
 				</Route>
+				<Route path="/*" element={<h1> Página no encontrada</h1>} />
 			</Routes>
 
 			<Footer />

@@ -8,6 +8,7 @@ import {
 	Cloud,
 	Robotic,
 	Blockchain,
+	LogoV,
 } from "src/components/UI/atoms/icons";
 import "./Solutions.css";
 
@@ -45,12 +46,17 @@ export const Solutions = () => {
 
 	return (
 		<div>
-			<Video type="solutions" />
+			<div className="logo-container">
+				<Video type="solutions" />
+				<div className="logo-absolute">
+					<LogoV />
+				</div>
+			</div>
 			<div style={{padding: "0 4rem"}}>
 				<h2 className="center">
 					software development For The Enterprise{service}
 				</h2>
-				<p className="center ">
+				<p className="">
 					With experience in machine learning and software development, we use
 					and develop technology to increase the competitiveness of your
 					business by focusing on user experience and innovation.

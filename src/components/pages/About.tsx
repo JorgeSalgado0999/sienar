@@ -5,6 +5,7 @@ import db from "src/firebase";
 
 import {Video} from "src/components/UI/atoms";
 import "./About.css";
+import {LogoV} from "../UI/atoms/icons";
 
 export const About = () => {
 	const [name, setName] = useState("");
@@ -41,7 +42,12 @@ export const About = () => {
 
 	return (
 		<div className="about">
-			<Video type="solutions" />
+			<div className="logo-container">
+				<Video type="solutions" />
+				<div className="logo-absolute">
+					<LogoV />
+				</div>
+			</div>
 			<div className="about-content">
 				<h2>About us</h2>
 				<p>

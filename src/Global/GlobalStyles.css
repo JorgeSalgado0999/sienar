@@ -77,6 +77,7 @@ h5 {
 p {
 	color: var(--mainColor);
 	font-size: 2rem;
+	text-align: justify;
 }
 @media (min-width: 992px) {
 	h1 {

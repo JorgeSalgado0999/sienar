@@ -21,7 +21,7 @@
 	justify-content: flex-end;
 }
 .color-overlay {
-	width: 100%;
+	width: 99%;
 	height: 89%;
 	background-color: var(--secondaryColor);
 	opacity: 0.3;
@@ -29,12 +29,14 @@
 	top: 0;
 }
 .color-overlay-left {
-	border-top-right-radius: 15rem;
-	border-bottom-right-radius: 15rem;
+	border-top-right-radius: 17rem;
+	border-bottom-right-radius: 17rem;
+	left: 0;
 }
 .color-overlay-right {
-	border-top-left-radius: 15rem;
-	border-bottom-left-radius: 15rem;
+	border-top-left-radius: 17rem;
+	border-bottom-left-radius: 17rem;
+	right: 0;
 }
 
 .text-position {
@@ -47,4 +49,18 @@
 .service-photo {
 	width: 100%;
 	height: 90%;
+}
+
+.service-container h4 {
+	font-family: "pirulen";
+}
+
+.service-container:hover h4 {
+	font-size: 4rem;
+	top: 40%;
+	text-decoration: underline;
+}
+
+.service-container:hover .color-overlay {
+	opacity: 0.6;
 }

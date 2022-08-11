@@ -73,3 +73,28 @@ h5.home-info {
 h5 span {
 	color: var(--secondaryColor);
 }
+
+.logo-container {
+	position: relative;
+}
+
+.home-logo-absolute {
+	position: absolute;
+	transform: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.home-logo-absolute {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+		display: inline;
+	}
+}

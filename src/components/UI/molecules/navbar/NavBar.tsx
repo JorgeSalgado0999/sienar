@@ -36,7 +36,7 @@ export const NavBar = () => {
 				<li className="nav-item">
 					<Link
 						to="/About"
-						className="nav-item"
+						className="nav-item separator"
 						onClick={() =>
 							menuState ? setMenuState(!menuState) : setMenuState(menuState)
 						}
@@ -47,7 +47,7 @@ export const NavBar = () => {
 				<li className="nav-item">
 					<Link
 						to="/Solutions"
-						className="nav-item"
+						className="nav-item separator"
 						onClick={() =>
 							menuState ? setMenuState(!menuState) : setMenuState(menuState)
 						}
@@ -58,7 +58,7 @@ export const NavBar = () => {
 				<li className="nav-item">
 					<Link
 						to="/About/contact"
-						className="nav-item"
+						className="nav-item separator"
 						onClick={() =>
 							menuState ? setMenuState(!menuState) : setMenuState(menuState)
 						}
@@ -66,7 +66,7 @@ export const NavBar = () => {
 						Contact
 					</Link>
 				</li>
-				<li className="nav-item">
+				<li className="nav-item ">
 					<DarkMode />
 				</li>
 			</ul>
