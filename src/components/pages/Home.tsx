@@ -62,8 +62,8 @@ export const Home = () => {
 							</div>
 						</div>
 					</div>
+					<h2 className="center">software development For The Enterprise</h2>
 					<div className="intro">
-						<h2 className="center">software development For The Enterprise</h2>
 						<p className="">
 							With experience in machine learning and software development, we
 							use and develop technology to increase the competitiveness of your

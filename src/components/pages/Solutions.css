@@ -37,6 +37,7 @@
 
 .col-content h3 {
 	font-family: "pirulen";
+	color: var(--secondaryColor);
 }
 
 .logo-container {
