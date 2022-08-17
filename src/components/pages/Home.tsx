@@ -18,6 +18,8 @@ export const Home = () => {
 	const [projects, setProjects] = useState("0");
 	const [date, setDate] = useState("");
 	const [days, setDays] = useState(0);
+	const storedTheme = localStorage.getItem("theme");
+	const [BGColor, setBGColor] = useState("");
 
 	function calcDays(parametro: string) {
 		const date_1 = new Date(parametro);
@@ -35,6 +37,12 @@ export const Home = () => {
 				setDate(doc.data().date);
 			});
 		});
+
+		if (storedTheme === "light") {
+			setBGColor("pink");
+		} else if (storedTheme === "dark") {
+			setBGColor("green");
+		}
 		setLoading(false);
 	}, []);
 
@@ -71,12 +79,36 @@ export const Home = () => {
 						</p>
 					</div>
 					<div className="services">
-						<Service type="left" service="WEB DEVELOPMENT" photo="web" />
-						<Service type="right" service="MOBILE APPS" photo="mobile" />
-						<Service type="left" service="CLOUD SERVICES " photo="cloud" />
-						<Service type="right" service="MACHINE LEARNING " photo="machine" />
-						<Service type="left" service="ROBOTIC VISION" photo="robotic" />
-						<Service type="right" service="BLOCKCHAIN" photo="blockchain" />
+						<Service
+							type="left"
+							service="WEB DEVELOPMENT"
+							photo={"web" + BGColor}
+						/>
+						<Service
+							type="right"
+							service="MOBILE APPS"
+							photo={"mobile" + BGColor}
+						/>
+						<Service
+							type="left"
+							service="CLOUD SERVICES "
+							photo={"cloud" + BGColor}
+						/>
+						<Service
+							type="right"
+							service="MACHINE LEARNING "
+							photo={"machine" + BGColor}
+						/>
+						<Service
+							type="left"
+							service="ROBOTIC VISION"
+							photo={"robotic" + BGColor}
+						/>
+						<Service
+							type="right"
+							service="BLOCKCHAIN"
+							photo={"blockchain" + BGColor}
+						/>
 					</div>
 					<div className="process">
 						<h2>OUR PROCESS</h2>
