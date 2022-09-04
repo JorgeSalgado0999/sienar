@@ -7,7 +7,7 @@
 .info-projects {
 	height: 7rem;
 	width: 100vw;
-	padding: 0 5rem;
+	padding: 0 10rem;
 
 	display: flex;
 	flex-direction: column;
@@ -41,8 +41,11 @@ h5.home-info {
 }
 
 .intro {
-	width: 80%;
 	margin: auto;
+	padding: 0 5rem;
+}
+h2 {
+	padding: 0 2rem;
 }
 .process {
 	padding: 0 3rem;
@@ -97,4 +100,16 @@ h5 span {
 		transform: translate(-50%, -50%);
 		display: inline;
 	}
+}
+
+.cryptos-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.crypto-img {
+	height: 8rem;
+	width: 8rem;
 }

@@ -149,6 +149,32 @@ export const Home = () => {
 							</div>
 						</div>
 					</div>
+
+					<div style={{padding: "0 4rem"}}>
+						<h2>WE ACCEPT CRYPTO</h2>
+						<div className="cryptos-container">
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/sienar2022.appspot.com/o/bitcoin.png?alt=media&token=d89e1753-67cd-4913-97f5-3b3aa74b5f36"
+								alt=""
+								className="crypto-img"
+							/>
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/sienar2022.appspot.com/o/usd.png?alt=media&token=d89e1753-67cd-4913-97f5-3b3aa74b5f36"
+								alt=""
+								className="crypto-img"
+							/>
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/sienar2022.appspot.com/o/binance.png?alt=media&token=d89e1753-67cd-4913-97f5-3b3aa74b5f36"
+								alt=""
+								className="crypto-img"
+							/>
+							<img
+								src="https://firebasestorage.googleapis.com/v0/b/sienar2022.appspot.com/o/tether.png?alt=media&token=d89e1753-67cd-4913-97f5-3b3aa74b5f36"
+								alt=""
+								className="crypto-img"
+							/>
+						</div>
+					</div>
 				</div>
 			)}
 		</div>

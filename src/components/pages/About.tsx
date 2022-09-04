@@ -17,7 +17,7 @@ export const About = () => {
 
 	function sendMessage(e: any) {
 		e.preventDefault();
-		let mensajeF = `QUe tal mi nombre es:${name}, ${message} mi contacto es: ${mail}`;
+		let mensajeF = `Que tal mi nombre es:${name}, ${message} mi contacto es: ${mail}`;
 		let link = `https://wa.me/${phone}/?text=${mensajeF}`;
 		window.open(link, "_blank");
 	}

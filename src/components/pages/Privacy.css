@@ -1,0 +1,15 @@
+.privacy-container {
+	padding: 0 5rem;
+}
+ol {
+	margin-left: 7rem;
+}
+li {
+	color: var(--mainColor);
+	font-size: 2rem;
+}
+@media (min-width: 992px) {
+	li {
+		font-size: 3rem;
+	}
+}

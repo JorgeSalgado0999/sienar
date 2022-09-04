@@ -15,3 +15,11 @@
 	color: var(--white);
 	stroke: var(--white);
 }
+
+.center-svg {
+	margin: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

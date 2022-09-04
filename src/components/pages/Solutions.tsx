@@ -52,10 +52,8 @@ export const Solutions = () => {
 					<LogoV />
 				</div>
 			</div>
+			<h2 className="center">software development For The Enterprise</h2>
 			<div style={{padding: "0 4rem"}}>
-				<h2 className="center">
-					software development For The Enterprise{service}
-				</h2>
 				<p className="">
 					With experience in machine learning and software development, we use
 					and develop technology to increase the competitiveness of your

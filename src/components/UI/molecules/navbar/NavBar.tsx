@@ -66,6 +66,17 @@ export const NavBar = () => {
 						Contact
 					</Link>
 				</li>
+				<li className="nav-item">
+					<Link
+						to="/"
+						className="nav-item separator"
+						onClick={() =>
+							menuState ? setMenuState(!menuState) : setMenuState(menuState)
+						}
+					>
+						ENG/ESP
+					</Link>
+				</li>
 				<li className="nav-item ">
 					<DarkMode />
 				</li>

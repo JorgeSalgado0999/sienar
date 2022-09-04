@@ -48,11 +48,16 @@
 }
 */
 
-.text-position {
+.text-positionleft {
 	position: absolute;
 	top: 48%;
-	left: 50%;
-	transform: translate(-50%, -25%);
+	left: 5rem;
+	margin: 0;
+}
+.text-positionright {
+	position: absolute;
+	top: 48%;
+	right: 5rem;
 	margin: 0;
 }
 
@@ -68,8 +73,10 @@
 }
 
 .service-container:hover h4 {
+	/*
 	font-size: 4rem;
 	top: 40%;
+	*/
 	text-decoration: underline;
 }
 
